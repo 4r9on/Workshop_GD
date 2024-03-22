@@ -521,6 +521,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 535945027849013469, guid: 99bb7a2fa95b4a740a145b575a3d1767, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1462592088352999285, guid: 99bb7a2fa95b4a740a145b575a3d1767, type: 3}
       propertyPath: m_Name
       value: mur jaune (1)
@@ -736,6 +740,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 535945027849013469, guid: 99bb7a2fa95b4a740a145b575a3d1767, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1462592088352999285, guid: 99bb7a2fa95b4a740a145b575a3d1767, type: 3}
       propertyPath: m_Name
       value: mur jaune
@@ -1136,6 +1144,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 535945027849013469, guid: 99bb7a2fa95b4a740a145b575a3d1767, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1462592088352999285, guid: 99bb7a2fa95b4a740a145b575a3d1767, type: 3}
       propertyPath: m_Name
       value: mur jaune (2)
@@ -1201,6 +1213,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 535945027849013469, guid: 99bb7a2fa95b4a740a145b575a3d1767, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1462592088352999285, guid: 99bb7a2fa95b4a740a145b575a3d1767, type: 3}
       propertyPath: m_Name
       value: mur jaune (3)
