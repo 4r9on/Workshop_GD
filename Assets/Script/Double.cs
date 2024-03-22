@@ -5,25 +5,46 @@ using UnityEngine;
 
 public class Double : MonoBehaviour
 {
+    public ManagerLitCut litCut;
+
+    public Shoot shoot;
+
     public GameObject cut;
     public GameObject litCutPrefab;
+
     public Transform divleft;
     public Transform divright;
 
     public float force;
 
+    //private float val1;
+    //private float val2;
+
     Touch touch;
+
+    
+
+
+
 
     // Update is called once per frame
     void Update()
-    {
-        if (Input.touchCount == 1)
+    { 
+        // mov = new Vector2(val1, val2);
+        //tCut.eulerAngles = mov;
+
+
+
+        //Vector2 mov1 = new Vector2(0, 0);
+
+        if (shoot.tu == false && Input.touchCount > 0)
         {
-            Div();
+            Debug.Log("www");
+            StartCoroutine(Div());
         }
     }
 
-    void Div()
+    /*void Div()
     {
         var bullet = Instantiate(litCutPrefab, divleft.position, divleft.rotation);
         bullet.GetComponent<Rigidbody2D>().velocity = divleft.up * force;
@@ -35,9 +56,30 @@ public class Double : MonoBehaviour
 
          GameObject litcut2 = Instantiate(litCutPrefab, divright.position, divright.rotation);
          Rigidbody2D rb2 = litcut2.GetComponent<Rigidbody2D>();
-         rb2.AddForce(divright.forward * force, ForceMode2D.Impulse);*/
+         rb2.AddForce(divright.forward * force, ForceMode2D.Impulse);
 
         Destroy(this.gameObject);
 
+    }*/
+
+    IEnumerator Div()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        if (shoot.tu == false && Input.touchCount == 1)
+        {
+            
+            Debug.Log("xxx");
+
+            for (int i = 0; i < 2; i++)
+            {
+                GameObject bullet = Instantiate(litCutPrefab, divleft.position, divleft.rotation);
+                bullet.GetComponent<Rigidbody2D>().velocity = divleft.up * force;
+
+                litCut.lCut.Add(bullet);
+            }
+
+            Destroy(this.gameObject);
+        }
     }
 }

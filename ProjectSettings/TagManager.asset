@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hole
+  - BlackHole
+  - Wall
+  - Target1
+  - Target2
+  - Target3
+  - Cut
+  - LCut
   layers:
   - Default
   - TransparentFX
