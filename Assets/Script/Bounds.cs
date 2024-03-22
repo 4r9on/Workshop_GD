@@ -11,13 +11,6 @@ public class Bounds : MonoBehaviour
 
     public GameObject reload;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         numberBounds.text = "" + bound;
@@ -33,6 +26,10 @@ public class Bounds : MonoBehaviour
         if(collision.gameObject.tag == "Wall")
         {
             bound--;
+        }
+        else if ( bound == 0)
+        {
+            bound = 0;
         }
     }
 

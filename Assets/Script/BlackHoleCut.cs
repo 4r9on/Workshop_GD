@@ -14,6 +14,12 @@ public class BlackHoleCut : MonoBehaviour
         rbCut = GetComponent<Rigidbody2D>();
     }
 
+    private void Update()
+    {
+        
+    }
+
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Hole"))
@@ -24,7 +30,7 @@ public class BlackHoleCut : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Hole")
+        if (collision.gameObject.tag == "BlackHole")
         {
             Destroy(this.gameObject);
             //reload.SetActive(true);

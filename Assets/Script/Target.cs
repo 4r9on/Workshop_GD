@@ -12,10 +12,15 @@ public class Target : MonoBehaviour
 
     private void Update()
     {
-        if(oneTarget == true || twoTarget == true && threeTarget == true)
+        if(oneTarget == true)
         {
             ui.SetActive(true);
         }
+        else if (twoTarget == true && threeTarget == true)
+        {
+            ui.SetActive(true);
+        }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -26,13 +31,13 @@ public class Target : MonoBehaviour
             oneTarget = true;
         }
 
-        if (collision.gameObject.tag == "LitCut")
+        if (collision.gameObject.tag == "LCut")
         {
             Debug.Log("win");
             twoTarget = true;
         }
 
-        if (collision.gameObject.tag == "LitCut")
+        if (collision.gameObject.tag == "LCut2")
         {
             Debug.Log("win");
             threeTarget = true;

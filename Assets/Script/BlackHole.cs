@@ -10,7 +10,7 @@ public class BlackHole : MonoBehaviour
     {
         if (collision.gameObject.tag == "Cut")
         {
-            Destroy(this.gameObject);
+            Destroy(collision.gameObject);
             reload.SetActive(true);
         }
 
