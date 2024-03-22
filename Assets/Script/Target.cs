@@ -20,19 +20,19 @@ public class Target : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Target1")
+        if (collision.gameObject.tag == "Cut")
         {
             Debug.Log("win");
             oneTarget = true;
         }
 
-        if (collision.gameObject.tag == "Target2")
+        if (collision.gameObject.tag == "LitCut")
         {
             Debug.Log("win");
             twoTarget = true;
         }
 
-        if (collision.gameObject.tag == "Target3")
+        if (collision.gameObject.tag == "LitCut")
         {
             Debug.Log("win");
             threeTarget = true;

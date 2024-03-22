@@ -21,4 +21,18 @@ public class BlackHoleCut : MonoBehaviour
             rbCut.velocity = new Vector3(0, vel);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Hole")
+        {
+            Destroy(this.gameObject);
+            //reload.SetActive(true);
+        }
+
+        if (collision.gameObject.tag == "LCut")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

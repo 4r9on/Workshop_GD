@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3018671616514149380}
   - component: {fileID: 9168054951041905871}
   - component: {fileID: 6064261309489519672}
+  - component: {fileID: -7011430497884112637}
   m_Layer: 0
   m_Name: petit couteau
   m_TagString: LCut
@@ -30,8 +31,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.81, y: -0.3054, z: 0}
-  m_LocalScale: {x: 0.23257127, y: 0.23257127, z: 0.23257127}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 0.49999997}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -163,4 +164,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbCut: {fileID: 0}
   vel: 2
-  reload: {fileID: 0}
+--- !u!114 &-7011430497884112637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6244811325162910947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12366ad2ceb088439a388503114c99e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oneTarget: 0
+  twoTarget: 0
+  threeTarget: 0
+  ui: {fileID: 0}
