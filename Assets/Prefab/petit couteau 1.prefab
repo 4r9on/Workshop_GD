@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 9168054951041905871}
   - component: {fileID: 6064261309489519672}
   m_Layer: 0
-  m_Name: petit couteau
-  m_TagString: LCut
+  m_Name: petit couteau 1
+  m_TagString: LCut2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
