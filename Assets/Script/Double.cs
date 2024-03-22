@@ -71,10 +71,13 @@ public class Double : MonoBehaviour
             
             Debug.Log("xxx");
 
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 1; i++)
             {
                 GameObject bullet = Instantiate(litCutPrefab, divleft.position, divleft.rotation);
                 bullet.GetComponent<Rigidbody2D>().velocity = divleft.up * force;
+
+                bullet = Instantiate(litCutPrefab, divright.position, divright.rotation);
+                bullet.GetComponent<Rigidbody2D>().velocity = divright.up * force;
 
                 litCut.lCut.Add(bullet);
             }

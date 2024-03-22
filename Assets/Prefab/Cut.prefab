@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 818466465089262750}
   - component: {fileID: 1073932271579579860}
   - component: {fileID: 6732220331582741102}
+  - component: {fileID: 8751959350719406552}
   m_Layer: 0
   m_Name: couteau
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1694342165086817317}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.050000004, y: 0.049999997, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.17102358, y: 0.17102358, z: 0.17102358}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -167,6 +168,22 @@ MonoBehaviour:
   maxDrag: 5
   rb: {fileID: 1073932271579579860}
   tu: 1
+--- !u!114 &8751959350719406552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694342165086817317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12366ad2ceb088439a388503114c99e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oneTarget: 0
+  twoTarget: 0
+  threeTarget: 0
+  ui: {fileID: 0}
 --- !u!1 &3533126147826558611
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3148178038742993293}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: RigthCut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,14 +255,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4721846143765902307}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d653e1253759bb43a600af13fb24530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shoot: {fileID: 0}
+  litCut: {fileID: 0}
+  shoot: {fileID: 6732220331582741102}
   cut: {fileID: 1694342165086817317}
-  litCutPrefab: {fileID: 7682570308335694604, guid: 3a51b390c31acfa47b5fb958ad936589, type: 3}
+  litCutPrefab: {fileID: 6244811325162910947, guid: 39b43658c82430b479ae9d3a9e54098d, type: 3}
   divleft: {fileID: 1857314936797399692}
   divright: {fileID: 3148178038742993293}
   force: 10
@@ -259,7 +277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1857314936797399692}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: LeftCut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
