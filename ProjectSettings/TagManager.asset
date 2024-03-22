@@ -12,6 +12,7 @@ TagManager:
   - Target3
   - Cut
   - LCut
+  - LCut2
   layers:
   - Default
   - TransparentFX
